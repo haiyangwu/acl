@@ -160,4 +160,8 @@ if(NOT CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
 	target_link_libraries(acl_cpp protocol acl)
 endif()
 
+install (TARGETS acl_cpp 
+         ARCHIVE DESTINATION lib
+         LIBRARY DESTINATION lib
+         RUNTIME DESTINATION bin)
 ##############################################################################

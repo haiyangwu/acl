@@ -137,4 +137,9 @@ endif()
 
 add_library(acl SHARED ${lib_src})
 
+install (TARGETS acl 
+         ARCHIVE DESTINATION lib
+         LIBRARY DESTINATION lib
+         RUNTIME DESTINATION bin)
+
 ##############################################################################
